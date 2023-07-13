@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 
 function User({user, onRemove, onToggle}) {
-    useEffect(() => {
-        console.log('user값이 설정됨')
-        console.log(user);
-        return () => {
-            console.log('user가 바뀌기 전')
-            console.log(user)
-        }
-    },[user])
+    // useEffect(() => {
+    //     // console.log('user값이 설정됨')
+    //     console.log(user);
+    //     return () => {
+    //         // console.log('user가 바뀌기 전')
+    //         // console.log(user)
+    //     }
+    // },[user])
     return (
         <div>
         <b
@@ -36,4 +36,4 @@ function UserList({users, onRemove, onToggle}) {
     )
 }
 
-export default UserList
+export default React.memo(UserList)

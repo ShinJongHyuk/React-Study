@@ -9,7 +9,7 @@ function InputSample() {
     const {name, nickname} = inputs
 
     const onChange = (e) => {
-        console.log(e.target)
+        // console.log(e.target)
         const {value, name} = e.target
         SetInputs({
             ...inputs,
